@@ -1,35 +1,28 @@
 "use strict"
 
-if(4 == 9) {
-   console.log(`Ok!`);
+let numb = 50;
+
+// while(numb <= 55) {
+//    console.log(numb);
+//    numb++;
+// }
+
+// do {
+//    console.log(numb);
+//    numb++;
+// }
+// while(numb < 55);
+
+for(let i = 1; i < 8; i++) {
+   if(i === 6) {
+      break; // доходит до 6 и останавливается, не включая 6 в список и остонавливает выполнения условия
+   }
+   console.log(i);
 }
-else{
-   console.log(`error`);
-}
 
-const numb = 50;
-
-// if(numb < 49) {
-//    console.log(`Error`);
-// }
-// else if(numb > 100) {
-//    console.log(`too much`);
-// }
-// else{
-//    console.log(`Ok`);
-// }
-
-
-// (numb == 50) ? console.log(`Ok`) : console.log(`Error`);
-
-
-switch(numb) {
-   case 49: console.log(`no`);
-   break;
-   case 100: console.log(`no again`);
-   break;
-   case 50: console.log(`yes`);
-   break;
-   default: console.log(`not today`);
-   break;
+for(let i = 1; i < 8; i++) {
+   if(i === 6) {
+      continue;  // пропускает 6 и продолжает пока не выполнится условие
+   }
+   console.log(i);
 }
