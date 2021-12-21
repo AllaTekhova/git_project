@@ -1,27 +1,35 @@
 "use strict"
 
-const numberOfFilms = +prompt(`Сколько фильмов ты посмотрел?`, ``);
+if(4 == 9) {
+   console.log(`Ok!`);
+}
+else{
+   console.log(`error`);
+}
+
+const numb = 50;
+
+// if(numb < 49) {
+//    console.log(`Error`);
+// }
+// else if(numb > 100) {
+//    console.log(`too much`);
+// }
+// else{
+//    console.log(`Ok`);
+// }
 
 
-console.log(numberOfFilms);
+// (numb == 50) ? console.log(`Ok`) : console.log(`Error`);
 
 
-const personalMovieDB = {
-   count: numberOfFilms,
-   movies: {},
-   actors: {},
-   genres: [],
-   privat: false,
-};
-
-const a = prompt(`Один из последних просмотренных фильмов?`),
-      b = prompt(`На сколько оцените его?`),
-      c = prompt(`Один из последних просмотренных фильмов?`),
-      d = prompt(`На сколько оцените его?`);
-
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-
-console.log(personalMovieDB);
-
+switch(numb) {
+   case 49: console.log(`no`);
+   break;
+   case 100: console.log(`no again`);
+   break;
+   case 50: console.log(`yes`);
+   break;
+   default: console.log(`not today`);
+   break;
+}
